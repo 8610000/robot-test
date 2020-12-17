@@ -38,3 +38,7 @@ app.listen(4200, () => {
   console.log("mock server start!");
 });
 
+module.exports = (req, res) => {
+  const { name = 'World' } = req.query
+  res.send(`Hello ${name}!`)
+}
