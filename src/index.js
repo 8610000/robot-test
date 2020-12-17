@@ -38,3 +38,4 @@ app.listen(4200, () => {
   console.log("mock server start!");
 });
 
+export const a = 3;
